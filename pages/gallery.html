@@ -1,0 +1,45 @@
+<!-- 班级推送页 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>班级推送</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- 复用导航代码 -->
+    <nav role="navigation">
+        <img src="../images/logo.jpg" alt="班级Logo" class="logo">
+        <div class="nav-buttons">
+            <a href="../index.html">首页</a>
+            <a href="gallery.html">班级推送</a>
+            <a href="column.html">三思专栏</a>
+            <a href="chatbot.html">访问智能体</a>
+            <a href="auth.html">注册/登录</a>
+        </div>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <div class="container">
+        <h1 class="column-title">班级推送</h1>
+        
+        <!-- 分页选择器 -->
+        <div class="page-size-selector">
+            每页显示：
+            <select id="page-size">
+                <option value="10">10条</option>
+                <option value="20" selected>20条</option>
+                <option value="50">50条</option>
+            </select>
+        </div>
+
+        <div id="articles-container" class="articles-grid"></div>
+        
+        <div class="pagination-controls">
+            <button id="prev-btn" class="pagination-btn">← 上一页</button>
+            <span id="page-indicator">第1页</span>
+            <button id="next-btn" class="pagination-btn">下一页 →</button>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

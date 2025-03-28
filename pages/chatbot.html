@@ -1,0 +1,65 @@
+<!-- 访问智能体页 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>访问智能体</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- 复用导航代码 -->
+    <nav role="navigation">
+        <img src="../images/logo.jpg" alt="班级Logo" class="logo">
+        <div class="nav-buttons">
+            <a href="../index.html">首页</a>
+            <a href="gallery.html">班级推送</a>
+            <a href="column.html">三思专栏</a>
+            <a href="chatbot.html">访问智能体</a>
+            <a href="auth.html">注册/登录</a>
+        </div>
+        <div class="hamburger">☰</div>
+    </nav>
+    
+    <div class="chat-container">
+        <div class="chat-messages" id="chat-messages">
+            <!-- 系统初始消息 -->
+            <div class="message system">
+                <div class="message-content">
+                    您好！我是为【清华为先34班】定制的智能助手。您可以问我任何关于班级的问题。
+                </div>
+            </div>
+        </div>
+        
+        <!-- 输入区域 -->
+        <div class="chat-input-area">
+            <textarea 
+                id="message-input" 
+                placeholder="输入您的问题（Shift+Enter换行）" 
+                rows="1"
+                autofocus
+            ></textarea>
+            <button id="send-button" class="send-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+
+<!--访问智能体的iframe
+<div class="content">
+    <h1 class="column-title">访问智能体</h1>
+      
+        <iframe
+            src="https://dify.net9.org/chatbot/hAK9RDMhu6ZbG50X"
+            style="width: 100%; height: 100%; min-height: 700px"
+            frameborder="0"
+            allow="microphone">
+        </iframe>
+        
+</div>
+-->
