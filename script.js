@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     adjustImageLayout();
 
     // 修改script.js中的聊天功能部分
-    if (window.location.pathname.includes('./pages/chatbot.html')) {
+    if (window.location.pathname.includes('chatbot.html')) {
         const messageInput = document.getElementById('message-input');
         const sendButton = documentButton = document.getElementById('send-button');
         const chatMessages = document.getElementById('chat-messages');
@@ -287,7 +287,8 @@ document.getElementById('next-btn').addEventListener('click', () => {
 });
 
 // 初始化时绑定（防止重复执行）
-if (window.location.pathname.includes('./pages/gallery.html')) {
+
+if (window.location.pathname.includes('gallery.html')) {
     document.addEventListener('DOMContentLoaded', renderArticles);
 }
 
